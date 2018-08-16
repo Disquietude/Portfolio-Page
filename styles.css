@@ -87,6 +87,7 @@ html {
 .name-card {
   color: white;
   padding-left: 5%;
+  width: 100%;
 }
 .name-card .subtitle {
   color: grey;
