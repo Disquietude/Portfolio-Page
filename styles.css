@@ -54,6 +54,10 @@ html {
   width: 100vw;
 }
 
+section {
+  width: 100%;
+}
+
 #navbar {
   position: fixed;
   top: 0;
