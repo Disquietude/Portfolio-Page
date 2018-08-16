@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title Portfolio Page
+    link(rel="stylesheet", href="styles.css")
+    link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.2.0/css/all.css", integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ", crossorigin="anonymous")
+  body
+    //- script(src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js")
+    nav#navbar
+      a(href="#welcome-section") Home
+      a(href="#about") About
+      a(href="#projects") Projects
+      a(href="#contact") Contact
+    section#welcome-section
+      .overlay
+        .name-card
+          h1.title Danny Ngo
+          h2.subtitle Industrial Engineer and Web Developer 
+    section#about
+      .section-title
+        h1.title About Me
+        h2.subtitle My qualifications and skills as a developer
+      .container.columns
+        .column
+          h1 Education
+          ul
+            li Industrial Engineering (University of Toronto)
+            ul
+              li Specializing in Operations Research
+          h1 Certification
+          ul
+            li freeCodeCamp
+            ul 
+              li Reponsive Web Design Certificate
+              li Javascript Algorithms and Data Structures Certificate
+        .column
+          h1 Web Development Skills
+          h2 
+            | HTML
+            i.fab.fa-html5 
+          ul
+            li Haml
+            li Jade/Pug
+          h2 
+            | CSS
+            i.fab.fa-css3
+          ul
+            li Sass
+            li Bootstrap
+            li Bulma 
+          h2 
+            | Javascript
+            i.fab.fa-js-square
+          ul
+            li jQuery
+            li Angular
+            li React
+    .divider.divider-bg-1
+      .overlay
+        .divider-title
+          h1.title Projects
+    section#projects
+      .section-title
+        h1.title Responsive Web Design Projects
+        h2.subtitle with Bulma CSS framework
+      .container.tiles
+        a.project-tile(href="https://codepen.io/Disquietude/full/mKQMdP/" target="_blank")
+          img(src="images/thumbnails/survey.png", alt="Survey Form")
+          .project-name Survey Form
+        a.project-tile(href="https://codepen.io/Disquietude/full/qKwLgJ/" target="_blank")
+          img(src="images/thumbnails/product-landing-page.png", alt="Product Landing Page")
+          .project-name Product Landing Page
+        a.project-tile(href="https://codepen.io/Disquietude/full/RBPrJa/" target="_blank")
+          img(src="images/thumbnails/tech-doc-page.png", alt="Technical Documentation Page")
+          .project-name Technical Documentation Page 
+      .section-title
+        h1.title AngularJS Projects
+      .container.tiles
+        a.project-tile(href="https://codepen.io/Disquietude/full/ddEYEW/" target="_blank")
+          img(src="images/thumbnails/wikipedia-viewer.png", alt="Wikipedia Viewer")
+          .project-name Wikipedia Viewer
+        a.project-tile(href="https://codepen.io/Disquietude/full/XEWoLL/" target="_blank")
+          img(src="images/thumbnails/twitch-app.png", alt="Twitch App")
+          .project-name Twitch App
+        a.project-tile(href="https://codepen.io/Disquietude/full/pLLwLe/" target="_blank")
+          img(src="images/thumbnails/javascript-calc.png", alt="Javascript Calculator")
+          .project-name Javascript Calculator
+      .section-title
+        h1.title ReactJS Projects 
+      .container.tiles
+        a.project-tile(href="https://codepen.io/Disquietude/full/geyzzw/" target="_blank")
+          img(src="images/thumbnails/pomodoro-clock.png", alt="Pomodoro Clock")
+          .project-name Pomodoro Clock
+        a.project-tile(href="https://codepen.io/Disquietude/full/eKObGV/" target="_blank")
+          img(src="images/thumbnails/tic-tac-toe.png", alt="Tic Tac Toe")
+          .project-name Tic Tac Toe
+        a.project-tile(href="https://codepen.io/Disquietude/full/vrJxeW/" target="_blank")
+          img(src="images/thumbnails/simon-game.png", alt="Simon Game")
+          .project-name Simon Game
+    .divider.divider-bg-2
+      .overlay
+        .divider-title
+          h1.title Contact
+    section#contact
+      .section-title
+        h1.title Contact Info
+        h2.subtitle How to reach me
+      .container.contact-info
+        i.far.fa-envelope.fa-3x
+        p.label Email: 
+        p danny93ngo@gmail.com
+        i.fas.fa-phone.fa-3x
+        p.label Phone:
+        p 1-416-720-5091
+        i.fab.fa-github.fa-3x
+        p.label Github:
+        p 
+          a#profile-link(href="https://github.com/Disquietude" target="_blank") github.com/Disquietude
+        i.fab.fa-codepen.fa-3x
+        p.label CodePen:
+        p
+          a(href="https://codepen.io/Disquietude/" target="_blank") codepen.io/Disquietude
+        i.fab.fa-free-code-camp.fa-3x
+        p.label freeCodeCamp: 
+        p
+          a(href="https://www.freecodecamp.org/disquietude" target="_blank") freecodecamp.org/disquietude
+    footer
+      a(href="#welcome-section") Back to top
+      p Designed by Danny Ngo

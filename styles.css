@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+.title {
+  font: 200 1.2em "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 3em;
+}
+
+.subtitle {
+  font: 200 1.2em "Open Sans", sans-serif;
+  font-size: 1.7em;
+}
+
+.section-title {
+  padding: 3rem 0 3rem 5%;
+}
+.section-title .subtitle {
+  color: grey;
+}
+
+.container {
+  display: flex;
+  width: 85%;
+  margin: auto;
+}
+
+.divider {
+  height: 25rem;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.divider-title {
+  margin: auto;
+  color: white;
+  border: solid 2px white;
+  padding: 1rem 2rem 1rem 2rem;
+}
+
+.overlay {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  display: flex;
+  background-color: black;
+  width: 100%;
+  height: 3.5rem;
+  z-index: 1;
+}
+#navbar a {
+  width: 25%;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font: 200 1.2em "Open Sans", sans-serif;
+  line-height: 3.5rem;
+  transition: 0.5s;
+}
+#navbar a:hover {
+  background-color: #0647f9;
+}
+
+#welcome-section {
+  background-image: url("images/pexels-photo-249203.jpeg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 100vh;
+}
+
+.name-card {
+  color: white;
+  position: relative;
+  left: 5%;
+}
+.name-card .subtitle {
+  color: grey;
+}
+
+#about, #projects, #contact {
+  padding-bottom: 4rem;
+}
+
+.columns .column {
+  width: 50%;
+  font: 200 1.2em "Open Sans", sans-serif;
+}
+.columns .column h1 {
+  font-weight: 300;
+  font-size: 2em;
+  margin-top: 3rem;
+}
+.columns .column h1:first-of-type {
+  margin-top: 0;
+}
+.columns .column h2 {
+  font-weight: 200;
+  font-size: 1.5em;
+  margin-top: 1em;
+  margin-left: 1%;
+}
+.columns .column h2 i {
+  color: #404040;
+  margin-left: 0.5rem;
+}
+.columns .column ul {
+  padding-left: 40px;
+}
+.columns .column ul li {
+  margin-top: 0.5em;
+}
+
+.divider-bg-1 {
+  background-image: url("images/divider-1-bg.png");
+}
+
+.tiles {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 3rem 3%;
+}
+
+.project-tile {
+  border: solid 1px #bfbfbf;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 10px #bfbfbf;
+  transition: 0.5s;
+  color: #404040;
+  text-decoration: none;
+}
+.project-tile:hover {
+  box-shadow: 0 10px 20px grey;
+}
+.project-tile img {
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+}
+.project-tile .project-name {
+  height: 4.5rem;
+  border-top: solid 1px #bfbfbf;
+  font: 200 1.2em "Open Sans", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  padding: 0.5rem 0 0 0.8rem;
+}
+
+.divider-bg-2 {
+  background-image: url("images/divider-2-bg.jpeg");
+}
+
+.contact-info {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 2rem 1rem;
+  justify-content: center;
+}
+.contact-info i {
+  color: #404040;
+}
+.contact-info p {
+  font: 200 1.2em "Open Sans", sans-serif;
+  font-size: 2rem;
+}
+.contact-info p a {
+  color: black;
+}
+
+footer {
+  height: 15rem;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font: 200 1.2em "Open Sans", sans-serif;
+}
+footer a {
+  border: 2px solid white;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 300;
+  transition: 0.5s;
+}
+footer a:hover {
+  background-color: #0647f9;
+}
+footer p {
+  margin-top: 3rem;
+  font-size: 1rem;
+}
+
+@media (max-width: 1024px) {
+  .columns {
+    flex-direction: column;
+  }
+  .columns .column {
+    width: 100%;
+  }
+  .columns .column:first-child {
+    margin-bottom: 3rem;
+  }
+
+  .tiles {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-info {
+    grid-template-columns: auto auto;
+  }
+  .contact-info .label {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

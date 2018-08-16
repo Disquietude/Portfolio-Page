@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans')
+
+// Variables
+$open-sans: 200 1.2em 'Open Sans', sans-serif
+$blue: hsl(224, 95%, 50%)
+$dark-grey: hsl(0, 0%, 25%)
+$light-grey: hsl(0, 0%, 75%)
+$vertical-gap: 3rem
+
+// Reusable classes for styling
+.title
+  font: $open-sans
+  font-weight: 300
+  font-size: 3em
+
+.subtitle
+  font: $open-sans
+  font-size: 1.7em
+
+.section-title
+  padding: $vertical-gap 0 $vertical-gap 5%
+  & .subtitle
+    color: grey
+
+.container
+  display: flex
+  width: 85%
+  margin: auto
+
+.divider
+  height: 25rem
+  background-size: cover
+  background-attachment: fixed
+  background-position: center
+
+.divider-title
+  margin: auto
+  color: white
+  border: solid 2px white
+  padding: 1rem 2rem 1rem 2rem
+
+.overlay
+  height: 100%
+  display: flex
+  align-items: center
+  background-color: hsla(0, 0, 0, 0.9)
+  
+// Element-specific styling
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  
+#navbar
+  position: fixed
+  top: 0
+  display: flex
+  background-color: black
+  width: 100%
+  height: 3.5rem
+  z-index: 1
+  & a 
+    width: 25%
+    color: white
+    text-decoration: none
+    text-align: center
+    font: $open-sans
+    line-height: 3.5rem
+    transition: 0.5s
+    &:hover
+      background-color: $blue
+      // background-color: white
+      // color: black
+
+#welcome-section
+  background-image: url("images/pexels-photo-249203.jpeg")
+  background-size: cover
+  background-attachment: fixed
+  background-position: center
+  height: 100vh
+
+.name-card
+  color: white
+  position: relative
+  left: 5%
+  & .subtitle
+    color: grey
+
+// section padding
+#about, #projects, #contact 
+  padding-bottom: 4rem
+
+// About section
+.columns
+  & .column
+    width: 50%
+    font: $open-sans
+    & h1 
+      font-weight: 300
+      font-size: 2em
+      margin-top: $vertical-gap
+      &:first-of-type
+        margin-top: 0
+    & h2 
+      font-weight: 200
+      font-size: 1.5em
+      margin-top: 1em
+      margin-left: 1%
+      & i 
+        color: $dark-grey
+        margin-left: 0.5rem
+    & ul 
+      padding-left: 40px 
+      & li
+        margin-top: 0.5em
+
+// first divider 
+.divider-bg-1
+  background-image: url("images/divider-1-bg.png")
+
+// Projects section
+.tiles
+  display: grid
+  grid-template-columns: 1fr 1fr 1fr
+  grid-gap: $vertical-gap 3%
+
+.project-tile
+  border: solid 1px $light-grey
+  border-radius: 5px
+  display: flex
+  flex-direction: column
+  box-shadow: 0 5px 10px $light-grey
+  transition: 0.5s
+  color: $dark-grey
+  text-decoration: none
+  &:hover
+    box-shadow: 0 10px 20px grey
+  & img 
+    width: 100%
+    border-radius: 5px 5px 0 0
+  & .project-name
+    height: 4.5rem
+    border-top: solid 1px $light-grey
+    font: $open-sans
+    font-size: 1.4rem
+    font-weight: 400 
+    padding: 0.5rem 0 0 0.8rem
+
+// second divider
+.divider-bg-2
+  background-image: url("images/divider-2-bg.jpeg")
+
+// Contact section
+.contact-info
+  display: grid
+  grid-template-columns: auto auto auto
+  grid-gap: 2rem 1rem
+  justify-content: center
+  & i 
+    color: $dark-grey
+  & p 
+    font: $open-sans
+    font-size: 2rem
+    & a 
+      color: black
+
+// Footer
+footer 
+  height: 15rem
+  background-color: black
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  color: white
+  font: $open-sans
+  & a 
+    border: 2px solid white
+    padding: 0.5rem 1rem 0.5rem 1rem
+    color: white
+    text-decoration: none
+    font-size: 2rem
+    font-weight: 300
+    transition: 0.5s
+    &:hover
+      // color: black
+      // background-color: white
+      background-color: $blue
+  & p 
+    margin-top: $vertical-gap
+    font-size: 1rem
+
+// media queries for responsiveness
+@media (max-width: 1024px)
+  // About section
+  .columns
+    flex-direction: column
+    & .column
+      width: 100%
+      &:first-child
+        margin-bottom: $vertical-gap
+  // Projects section
+  .tiles
+    grid-template-columns: 1fr
+  // Contact section
+  .contact-info
+    grid-template-columns: auto auto
+    & .label
+      display: none
