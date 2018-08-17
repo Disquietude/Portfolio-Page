@@ -10,17 +10,15 @@ $(document).ready(function () {
   });
 
   //Scrollspy effect
-
-  //section offsets
-  let offsets = [
-    0,
-    $("#about").offset().top - 50,
-    $(".divider-bg-1").offset().top - 50,
-    $(".divider-bg-2").offset().top - 40
-  ];
-
   $(window).scroll(function() { 
     let scrollbarPosition = $(this).scrollTop();
+    //section offsets
+    let offsets = [
+      0,
+      $("#about").offset().top - 51,
+      $(".divider-bg-1").offset().top - 50,
+      $(".divider-bg-2").offset().top - 50
+    ];
 
     //select which nav-link to add .active to based on scroll position
     let n = 0;
