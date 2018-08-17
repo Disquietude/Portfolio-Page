@@ -12,6 +12,7 @@
 
 .section-title {
   padding: 3rem 0 3rem 5%;
+  width: 100%;
 }
 .section-title .subtitle {
   color: grey;
@@ -234,6 +235,20 @@ footer p {
   }
   .contact-info .label {
     display: none;
+  }
+}
+@media (max-width: 768px) {
+  .contact-info {
+    grid-template-columns: 100%;
+    grid-row-gap: 0.5rem;
+    justify-items: center;
+  }
+  .contact-info p {
+    font-size: 1.4em;
+    margin-bottom: 2rem;
+  }
+  .contact-info p:last-of-type {
+    margin-bottom: 0;
   }
 }
 

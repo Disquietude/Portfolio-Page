@@ -19,6 +19,7 @@ $vertical-gap: 3rem
 
 .section-title
   padding: $vertical-gap 0 $vertical-gap 5%
+  width: 100%
   & .subtitle
     color: grey
 
@@ -213,3 +214,14 @@ footer
     grid-template-columns: auto auto
     & .label
       display: none
+
+@media (max-width: 768px)
+  .contact-info
+    grid-template-columns: 100%
+    grid-row-gap: 0.5rem
+    justify-items: center
+    & p 
+      font-size: 1.4em
+      margin-bottom: 2rem
+      &:last-of-type
+        margin-bottom: 0
