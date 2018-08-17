@@ -10,10 +10,10 @@ html(lang="en")
   body
     //- script(src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js")
     nav#navbar
-      a(href="#welcome-section") Home
-      a(href="#about") About
-      a(href="#projects") Projects
-      a(href="#contact") Contact
+      a.nav-link(href="#welcome-section") Home
+      a.nav-link(href="#about") About
+      a.nav-link(href="#projects") Projects
+      a.nav-link(href="#contact") Contact
     section#welcome-section
       .overlay
         .name-card
@@ -128,5 +128,7 @@ html(lang="en")
         p
           a(href="https://www.freecodecamp.org/disquietude" target="_blank") freecodecamp.org/disquietude
     footer
-      a(href="#welcome-section") Back to top
+      a.nav-link(href="#welcome-section") Back to top
       p Designed by Danny Ngo
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+    script(src="app.js")

@@ -75,9 +75,9 @@ section {
   text-align: center;
   font: 200 1.2em "Open Sans", sans-serif;
   line-height: 3.5rem;
-  transition: 0.5s;
+  transition: 0.3s;
 }
-#navbar a:hover {
+#navbar a:hover, #navbar a.active {
   background-color: #0647f9;
 }
 
@@ -174,7 +174,7 @@ section {
 .contact-info {
   display: grid;
   grid-template-columns: auto auto auto;
-  grid-gap: 2rem 1rem;
+  grid-gap: 3rem 1rem;
   justify-content: center;
 }
 .contact-info i {
@@ -245,7 +245,7 @@ footer p {
   }
   .contact-info p {
     font-size: 1.4em;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
   }
   .contact-info p:last-of-type {
     margin-bottom: 0;

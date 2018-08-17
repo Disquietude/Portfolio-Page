@@ -73,8 +73,8 @@ section
     text-align: center
     font: $open-sans
     line-height: 3.5rem
-    transition: 0.5s
-    &:hover
+    transition: 0.3s
+    &:hover, &.active 
       background-color: $blue
       // background-color: white
       // color: black
@@ -161,7 +161,7 @@ section
 .contact-info
   display: grid
   grid-template-columns: auto auto auto
-  grid-gap: 2rem 1rem
+  grid-gap: $vertical-gap 1rem
   justify-content: center
   & i 
     color: $dark-grey
@@ -222,6 +222,6 @@ footer
     justify-items: center
     & p 
       font-size: 1.4em
-      margin-bottom: 2rem
+      margin-bottom: $vertical-gap
       &:last-of-type
         margin-bottom: 0
