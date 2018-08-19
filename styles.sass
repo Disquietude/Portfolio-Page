@@ -7,6 +7,12 @@ $dark-grey: hsl(0, 0%, 25%)
 $light-grey: hsl(0, 0%, 75%)
 $vertical-gap: 3rem
 
+// Reset default values 
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
 // Reusable classes for styling
 .title
   font: $open-sans
@@ -47,12 +53,7 @@ $vertical-gap: 3rem
   background-color: hsla(0, 0, 0, 0.9)
   
 // Element-specific styling
-*
-  margin: 0
-  padding: 0
-  box-sizing: border-box
-
-html 
+html, body 
   width: 100vw
 
 section 
@@ -61,23 +62,27 @@ section
 #navbar
   position: fixed
   top: 0
-  display: flex
+  display: grid
+  grid-template-columns: 25% 25% 25% 25%
   background-color: black
   width: 100%
   height: 3.5rem
   z-index: 1
-  & a 
-    width: 25%
+  & .responsive-menu
+    display: none
+  & .nav-link
+    width: 100%
     color: white
     text-decoration: none
     text-align: center
     font: $open-sans
     line-height: 3.5rem
-    transition: 0.3s
-    &:hover, &.active 
+    transition: 0.5s
+    &.active 
       background-color: $blue
-      // background-color: white
-      // color: black
+    &:hover
+      background-color: $light-grey
+      color: black
 
 #welcome-section
   background-image: url("images/pexels-photo-249203.jpeg")
@@ -190,8 +195,6 @@ footer
     font-weight: 300
     transition: 0.5s
     &:hover
-      // color: black
-      // background-color: white
       background-color: $blue
   & p 
     margin-top: $vertical-gap
@@ -199,6 +202,24 @@ footer
 
 // media queries for responsiveness
 @media (max-width: 1024px)
+  // Navbar
+  #navbar 
+    grid-template-columns: 100%
+    & .responsive-menu
+      background-color: inherit
+      display: flex
+      align-items: center
+      justify-content: flex-end
+      width: 100%
+      height: 3.5rem
+      padding: rem
+      & .fa-bars 
+        color: white
+        margin-right: 1rem
+        cursor: pointer
+    & .nav-link  
+      background-color: inherit
+      display: none
   // About section
   .columns
     flex-direction: column
