@@ -125,6 +125,8 @@ section
       padding-left: 40px 
       & li
         margin-top: 0.5em
+        & a 
+          color: black
 
 // first divider 
 .divider-bg-1
@@ -225,8 +227,9 @@ footer
     flex-direction: column
     & .column
       width: 100%
-      &:first-child
-        margin-bottom: $vertical-gap
+      margin-bottom: $vertical-gap
+      &:last-of-type
+        margin-bottom: 0
   // Projects section
   .tiles
     grid-template-columns: 1fr

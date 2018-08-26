@@ -138,6 +138,9 @@ section {
 .columns .column ul li {
   margin-top: 0.5em;
 }
+.columns .column ul li a {
+  color: black;
+}
 
 .divider-bg-1 {
   background-image: url("images/divider-1-bg.png");
@@ -251,9 +254,10 @@ footer p {
   }
   .columns .column {
     width: 100%;
-  }
-  .columns .column:first-child {
     margin-bottom: 3rem;
+  }
+  .columns .column:last-of-type {
+    margin-bottom: 0;
   }
 
   .tiles {
