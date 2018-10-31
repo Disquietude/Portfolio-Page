@@ -104,6 +104,7 @@ section
 
 // About section
 .columns
+  display: flex
   & .column
     width: 50%
     font: $open-sans
@@ -125,6 +126,7 @@ section
       padding-left: 40px 
       & li
         margin-top: 0.5em
+        font-size: 1.2rem
         & a 
           color: black
 
@@ -229,6 +231,8 @@ footer
       width: 100%
       margin-bottom: $vertical-gap
       &:last-of-type
+        margin-bottom: 0
+      &--no-margin-bottom
         margin-bottom: 0
   // Projects section
   .tiles

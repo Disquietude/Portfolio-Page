@@ -110,6 +110,9 @@ section {
   padding-bottom: 4rem;
 }
 
+.columns {
+  display: flex;
+}
 .columns .column {
   width: 50%;
   font: 200 1.2em "Open Sans", sans-serif;
@@ -137,6 +140,7 @@ section {
 }
 .columns .column ul li {
   margin-top: 0.5em;
+  font-size: 1.2rem;
 }
 .columns .column ul li a {
   color: black;
@@ -257,6 +261,9 @@ footer p {
     margin-bottom: 3rem;
   }
   .columns .column:last-of-type {
+    margin-bottom: 0;
+  }
+  .columns .column--no-margin-bottom {
     margin-bottom: 0;
   }
 
